@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGO | Surplus2Shelter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        🌱 Surplus<span class="green">2</span>Shelter
+    </a>
+
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+    <nav id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="donor.html">Donate</a>
+        <a class="active" href="ngo.html">NGO</a>
+        <a href="matching.html">Smart Match</a>
+        <a href="delivery.html">Delivery</a>
+        <a href="dashboard.html">Impact</a>
+    </nav>
+
+</header>
+
+
+<main class="form-page">
+
+    <div class="page-title">
+        <span class="eyebrow">NGO / SHELTER</span>
+
+        <h1>
+            Tell us what your
+            <span>community needs.</span>
+        </h1>
+
+        <p>
+            Submit your requirement and discover nearby surplus food.
+        </p>
+    </div>
+
+
+    <form id="ngoForm" class="glass-form ngo-form">
+
+        <div class="form-grid">
+
+            <div class="input-group">
+                <label>NGO / Shelter Name</label>
+                <input id="ngoName" required
+                       placeholder="Hope Shelter">
+            </div>
+
+            <div class="input-group">
+                <label>Location</label>
+                <input id="ngoLocation" required
+                       placeholder=" ">
+            </div>
+
+            <div class="input-group">
+                <label>Food Type</label>
+                <select id="requiredFood">
+                    <option>Any</option>
+                    <option>Cooked Meal</option>
+                    <option>Bakery</option>
+                    <option>Fruits</option>
+                    <option>Vegetables</option>
+                    <option>Packaged Food</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label>Required Quantity (kg)</label>
+                <input id="requiredQuantity"
+                       type="number" min="1"
+                       placeholder="20">
+            </div>
+
+            <div class="input-group">
+                <label>People to Serve</label>
+                <input id="people"
+                       type="number" min="1"
+                       placeholder="80">
+            </div>
+
+            <div class="input-group">
+                <label>Urgency</label>
+                <select id="urgency">
+                    <option>Normal</option>
+                    <option>Urgent</option>
+                </select>
+            </div>
+
+        </div>
+
+        <button class="primary-btn submit-btn">
+            🏠 Submit Requirement
+        </button>
+
+    </form>
+
+
+    <section class="available-section">
+
+        <div class="section-heading">
+            <span class="eyebrow">NEARBY DONATIONS</span>
+            <h2>Available Food</h2>
+        </div>
+
+        <div id="foodList" class="food-grid"></div>
+
+    </section>
+
+</main>
+
+
+<footer>
+    <div>🌱 <strong>Surplus 2 Shelter</strong></div>
+    <p>Connecting food with communities</p>
+    <span>© 2026</span>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

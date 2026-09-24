@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Food | Surplus2Shelter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        🌱 Surplus<span class="green">2</span>Shelter
+    </a>
+
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+    <nav id="navMenu">
+        <a href="index.html">Home</a>
+        <a class="active" href="donor.html">Donate</a>
+        <a href="ngo.html">NGO</a>
+        <a href="matching.html">Smart Match</a>
+        <a href="delivery.html">Delivery</a>
+        <a href="dashboard.html">Impact</a>
+    </nav>
+
+</header>
+
+
+<main class="form-page">
+
+    <div class="page-title">
+
+        <span class="eyebrow">FOOD DONOR</span>
+
+        <h1>
+            Your surplus can become
+            <span>someone's meal.</span>
+        </h1>
+
+        <p>
+            Tell us what food you have available and we'll find
+            the right nearby shelter.
+        </p>
+
+    </div>
+
+
+    <div class="form-layout">
+
+        <div class="form-info">
+
+            <div class="big-food-icon">🍱</div>
+
+            <h2>Every meal matters.</h2>
+
+            <p>
+                Your donation will be matched based on food type,
+                quantity, location and expiry time.
+            </p>
+
+            <div class="info-points">
+                <span>✓ Safe food only</span>
+                <span>✓ Expiry-aware matching</span>
+                <span>✓ Nearby NGO discovery</span>
+                <span>✓ Volunteer delivery</span>
+            </div>
+
+        </div>
+
+
+        <form id="donationForm" class="glass-form">
+
+            <h2>Post a Food Donation</h2>
+
+            <div class="form-grid">
+
+                <div class="input-group full-width">
+                    <label>Food Name</label>
+                    <input id="foodName" required
+                           placeholder="e.g. Vegetable Biryani">
+                </div>
+
+                <div class="input-group">
+                    <label>Category</label>
+                    <select id="category">
+                        <option>Cooked Meal</option>
+                        <option>Bakery</option>
+                        <option>Fruits</option>
+                        <option>Vegetables</option>
+                        <option>Packaged Food</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label>Quantity (kg)</label>
+                    <input id="quantity" type="number"
+                           min="1" required placeholder="10">
+                </div>
+
+                <div class="input-group">
+                    <label>Estimated Servings</label>
+                    <input id="servings" type="number"
+                           min="1" required placeholder="40">
+                </div>
+
+                <div class="input-group">
+                    <label>Donor Name</label>
+                    <input id="donorName" required
+                           placeholder="Restaurant / Canteen">
+                </div>
+
+                <div class="input-group full-width">
+                    <label>Pickup Location</label>
+                    <input id="location" required
+                           placeholder="Enter pickup location">
+                </div>
+
+                <div class="input-group">
+                    <label>Safe Until</label>
+                    <input id="expiry" type="datetime-local" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Pickup By</label>
+                    <input id="pickup" type="datetime-local" required>
+                </div>
+
+                <div class="input-group full-width">
+                    <label>Additional Notes</label>
+                    <textarea id="notes"
+                              placeholder="Preparation details, packaging, etc."></textarea>
+                </div>
+
+            </div>
+
+            <label class="check">
+                <input type="checkbox" id="safeFood" required>
+                <span>
+                    I confirm this food is safe and suitable for consumption.
+                </span>
+            </label>
+
+            <button class="primary-btn submit-btn">
+                🍱 Post Food Donation
+            </button>
+
+        </form>
+
+    </div>
+
+</main>
+
+<footer>
+    <div>🌱 <strong>Surplus2Shelter</strong></div>
+    <p>Rescue Food · Reach People · Reduce Waste</p>
+    <span>© 2026</span>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

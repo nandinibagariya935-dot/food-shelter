@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Matching | Surplus2Shelter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        🌱 Surplus<span class="green">2</span>Shelter
+    </a>
+
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+    <nav id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="donor.html">Donate</a>
+        <a href="ngo.html">NGO</a>
+        <a class="active" href="matching.html">Smart Match</a>
+        <a href="delivery.html">Delivery</a>
+        <a href="dashboard.html">Impact</a>
+    </nav>
+
+</header>
+
+
+<main class="matching-page">
+
+    <div class="page-title">
+        <span class="eyebrow">SMART MATCHING ENGINE</span>
+
+        <h1>
+            Find the <span>right match.</span>
+        </h1>
+
+        <p>
+            Our demo engine considers food type, quantity,
+            distance and expiry urgency.
+        </p>
+    </div>
+
+
+    <div class="matching-layout">
+
+        <aside class="filter-panel">
+
+            <div class="filter-title">
+                <h3>Filters</h3>
+                <span>⚙</span>
+            </div>
+
+            <label>Search</label>
+
+            <input id="search"
+                   placeholder="Food or location...">
+
+            <label>Food Type</label>
+
+            <select id="foodFilter">
+                <option value="all">All Food</option>
+                <option>Cooked Meal</option>
+                <option>Bakery</option>
+                <option>Fruits</option>
+                <option>Vegetables</option>
+            </select>
+
+            <label>Sort By</label>
+
+            <select id="sort">
+                <option value="score">Highest Match</option>
+                <option value="distance">Nearest</option>
+                <option value="expiry">Expiring Soon</option>
+            </select>
+
+            <div class="engine-status">
+                <div class="scanner"></div>
+
+                <strong>Engine Active</strong>
+
+                <p>
+                    Scanning available food...
+                </p>
+            </div>
+
+        </aside>
+
+
+        <section>
+
+            <div class="results-header">
+
+                <div>
+                    <span class="green-dot"></span>
+                    LIVE MATCHES
+                </div>
+
+                <span id="matchCount">
+                    0 matches
+                </span>
+
+            </div>
+
+            <div id="matches" class="match-grid"></div>
+
+        </section>
+
+    </div>
+
+</main>
+
+
+<footer>
+    <div>🌱 <strong>Surplus2Shelter</strong></div>
+    <p>Smart matching · Faster rescue</p>
+    <span>© 2026</span>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

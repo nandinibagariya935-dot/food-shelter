@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impact Dashboard | Surplus2Shelter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        🌱 Surplus<span class="green">2</span>Shelter
+    </a>
+
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+    <nav id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="donor.html">Donate</a>
+        <a href="ngo.html">NGO</a>
+        <a href="matching.html">Smart Match</a>
+        <a href="delivery.html">Delivery</a>
+        <a class="active" href="dashboard.html">Impact</a>
+    </nav>
+
+</header>
+
+
+<main class="dashboard-page">
+
+    <div class="page-title left">
+
+        <span class="eyebrow">IMPACT DASHBOARD</span>
+
+        <h1>
+            Every meal makes a <span>difference.</span>
+        </h1>
+
+        <p>
+            Track the impact created by the Surplus2Shelter network.
+        </p>
+
+    </div>
+
+
+    <section class="impact-cards">
+
+        <div class="impact-card">
+            <div>🍱</div>
+            <span>MEALS RESCUED</span>
+            <strong id="mealStat">12450</strong>
+            <small>↑ 18.4% this month</small>
+        </div>
+
+        <div class="impact-card">
+            <div>♻️</div>
+            <span>FOOD SAVED</span>
+            <strong id="foodStat">8200</strong>
+            <small>kg rescued</small>
+        </div>
+
+        <div class="impact-card">
+            <div>🚚</div>
+            <span>DELIVERIES</span>
+            <strong id="deliveryStat">1240</strong>
+            <small>successful</small>
+        </div>
+
+        <div class="impact-card">
+            <div>🏠</div>
+            <span>NGOs</span>
+            <strong>85</strong>
+            <small>connected</small>
+        </div>
+
+    </section>
+
+
+    <section class="dashboard-grid">
+
+        <div class="chart-card">
+
+            <div class="chart-heading">
+                <div>
+                    <span class="eyebrow">MONTHLY</span>
+                    <h2>Food Rescue</h2>
+                </div>
+
+                <span class="chart-label">2026</span>
+            </div>
+
+            <div class="bar-chart">
+
+                <div class="bar" style="height:45%">
+                    <span>Jan</span>
+                </div>
+
+                <div class="bar" style="height:58%">
+                    <span>Feb</span>
+                </div>
+
+                <div class="bar" style="height:50%">
+                    <span>Mar</span>
+                </div>
+
+                <div class="bar" style="height:70%">
+                    <span>Apr</span>
+                </div>
+
+                <div class="bar" style="height:88%">
+                    <span>May</span>
+                </div>
+
+                <div class="bar" style="height:96%">
+                    <span>Jun</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="impact-summary">
+
+            <span class="eyebrow">COMMUNITY IMPACT</span>
+
+            <h2>
+                Your network has rescued
+                <span>45,000+</span> meals.
+            </h2>
+
+            <p>
+                Together, donors, shelters and volunteers are
+                turning surplus into meaningful community support.
+            </p>
+
+            <div class="mini-impact">
+
+                <div>
+                    <b>85</b>
+                    <span>Shelters</span>
+                </div>
+
+                <div>
+                    <b>320</b>
+                    <span>Donors</span>
+                </div>
+
+                <div>
+                    <b>1,240</b>
+                    <span>Deliveries</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="timeline">
+
+        <div class="section-heading left">
+            <span class="eyebrow">RECENT ACTIVITY</span>
+            <h2>Rescue Timeline</h2>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-icon">🍛</div>
+            <div>
+                <b>45 meals rescued</b>
+                <p>Green Leaf Kitchen → Hope Shelter</p>
+            </div>
+            <span>12 min ago</span>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-icon">🍞</div>
+            <div>
+                <b>30 bakery items rescued</b>
+                <p>Daily Bakery → Care Foundation</p>
+            </div>
+            <span>34 min ago</span>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-icon">🥗</div>
+            <div>
+                <b>60 meals delivered</b>
+                <p>College Canteen → Hope Shelter</p>
+            </div>
+            <span>1 hr ago</span>
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+    <div>🌱 <strong>Surplus2Shelter</strong></div>
+    <p>Rescue Food · Reach People · Reduce Waste</p>
+    <span>© 2026</span>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

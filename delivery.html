@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery | Surplus2Shelter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        🌱 Surplus<span class="green">2</span>Shelter
+    </a>
+
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+    <nav id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="donor.html">Donate</a>
+        <a href="ngo.html">NGO</a>
+        <a href="matching.html">Smart Match</a>
+        <a class="active" href="delivery.html">Delivery</a>
+        <a href="dashboard.html">Impact</a>
+    </nav>
+
+</header>
+
+
+<main class="delivery-page">
+
+    <div class="page-title">
+
+        <span class="eyebrow">VOLUNTEER DELIVERY</span>
+
+        <h1>
+            Your next <span>rescue mission.</span>
+        </h1>
+
+        <p>
+            Pick up surplus food and deliver it before time runs out.
+        </p>
+
+    </div>
+
+
+    <div id="deliveryList"></div>
+
+
+    <div class="delivery-demo">
+
+        <div class="fake-map big-map">
+
+            <div class="map-road road-1"></div>
+            <div class="map-road road-2"></div>
+            <div class="map-road road-3"></div>
+
+            <div class="map-route"></div>
+
+            <div class="map-pin restaurant-pin">
+                🍴
+            </div>
+
+            <div class="map-pin ngo-pin">
+                🏠
+            </div>
+
+            <div class="map-pin driver-pin">
+                🚚
+            </div>
+
+        </div>
+
+        <div class="delivery-side">
+
+            <span class="live-label">
+                ● ACTIVE DELIVERY
+            </span>
+
+            <h2>Green Leaf Kitchen</h2>
+
+            <div class="route-arrow">↓</div>
+
+            <h2>Hope Shelter</h2>
+
+            <div class="delivery-stats">
+
+                <div>
+                    <strong>18 kg</strong>
+                    <span>Food</span>
+                </div>
+
+                <div>
+                    <strong>45</strong>
+                    <span>Meals</span>
+                </div>
+
+                <div>
+                    <strong>12 min</strong>
+                    <span>ETA</span>
+                </div>
+
+            </div>
+
+            <div class="progress">
+
+                <div class="progress-step active">
+                    <b>1</b>
+                    Assigned
+                </div>
+
+                <div class="progress-step">
+                    <b>2</b>
+                    Picked Up
+                </div>
+
+                <div class="progress-step">
+                    <b>3</b>
+                    In Transit
+                </div>
+
+                <div class="progress-step">
+                    <b>4</b>
+                    Delivered
+                </div>
+
+            </div>
+
+            <small>
+                Demo route · Simulated for prototype
+            </small>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<footer>
+    <div>🌱 <strong>Surplus2Shelter</strong></div>
+    <p>Rescue in motion</p>
+    <span>© 2026</span>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
